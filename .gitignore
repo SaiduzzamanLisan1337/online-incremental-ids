@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Local dataset files (do not upload CICIDS2017 to GitHub)
+data/raw/*
+!data/raw/.gitkeep
+data/demo/*
+!data/demo/.gitkeep
+
+# Experiment outputs and model binaries
+outputs/*
+!outputs/.gitkeep
+*.joblib
+*.pkl
+
+# IDE
+.idea/
+.vscode/

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "online-incremental-ids"
+version = "1.0.0"
+description = "Time-aware comparison of static and incremental intrusion detection on CICIDS2017 traffic batches"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3.0",
+  "pandas>=2.0,<3.0",
+  "scikit-learn>=1.3,<2.0",
+  "matplotlib>=3.7,<4.0",
+  "joblib>=1.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
